@@ -5,14 +5,14 @@ import platform
 with open("README.md", "r", errors='ignore') as f:
     long_description = f.read()
 
-with open('requirements.txt', 'r', encoding='utf-16') as ff:
+with open('requirements.txt', 'r', encoding='utf-8', errors='ignore') as ff:
     required = ff.read().splitlines()
 
-if platform.system() == 'Windows':
-    # required.append('tensorflow@https://github.com/andreped/tensorflow-windows-wheel/raw/master/1.13.1/py37/CPU/sse2/tensorflow-1.13.1-cp37-cp37m-win_amd64.whl')
-    required.append('tensorflow==2.4')
-else:
-    required.append('tensorflow==2.4')
+#if platform.system() == 'Windows':
+#    # required.append('tensorflow@https://github.com/andreped/tensorflow-windows-wheel/raw/master/1.13.1/py37/CPU/sse2/tensorflow-1.13.1-cp37-cp37m-win_amd64.whl')
+#    required.append('tensorflow==2.6.0')
+#else:
+#    required.append('tensorflow==2.6.0')
 
 setup(
     name='raidionicsseg',
