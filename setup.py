@@ -14,7 +14,6 @@ if platform.system() == 'Windows':
 else:
     required.append('tensorflow==2.4')
 
-
 setup(
     name='raidionicsseg',
     packages=find_packages(
