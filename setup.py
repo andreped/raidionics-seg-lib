@@ -5,7 +5,7 @@ import platform
 with open("README.md", "r", errors='ignore') as f:
     long_description = f.read()
 
-with open('requirements.txt', 'r', encoding='utf-8', errors='ignore') as ff:
+with open('requirements.txt', 'r', encoding='utf-16') as ff:
     required = ff.read().splitlines()
 
 if platform.system() == 'Windows':
