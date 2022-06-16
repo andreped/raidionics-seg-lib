@@ -10,9 +10,9 @@ with open('requirements.txt', 'r', encoding='utf-8', errors='ignore') as ff:
 
 if platform.system() == 'Windows':
     # required.append('tensorflow@https://github.com/andreped/tensorflow-windows-wheel/raw/master/1.13.1/py37/CPU/sse2/tensorflow-1.13.1-cp37-cp37m-win_amd64.whl')
-    required.append('tensorflow==1.13.1')
+    required.append('tensorflow==2.4')
 else:
-    required.append('tensorflow==1.13.1')
+    required.append('tensorflow==2.4')
 
 
 setup(
