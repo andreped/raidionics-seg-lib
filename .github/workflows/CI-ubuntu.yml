@@ -2,9 +2,9 @@ name: CI Ubuntu
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, tf2 ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, tf2 ]
 
 jobs:
   build:
